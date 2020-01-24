@@ -1,3 +1,52 @@
+/* Styles */
+html,
 body {
-  color: red;
+  font-size: 62.5%;
+  margin: 0;
+  color: black;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#grid {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 0 auto;
+}
+
+.box {
+  cursor: pointer;
+  display: inline-grid;
+  font-size: 5rem;
+  padding: 5rem;
+  place-items: center;
+}
+
+.active {
+  background: #ff9668;
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+  #grid {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 999px) {
+  #grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 32rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #grid {
+    grid-template-columns: repeat(3, 1fr);
+    width: 48rem;
+  }
 }

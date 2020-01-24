@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`helpers > createNumberedBox returns a div with a numeric value 1`] = `
+<div
+  class="box"
+>
+  99
+</div>
+`;
